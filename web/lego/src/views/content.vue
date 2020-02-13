@@ -58,13 +58,13 @@ export default {
     clickme() {
       var editorContent = document.querySelector(".editor");
       const htmldata = editorContent.innerHTML;
-      axios.post('http://192.168.43.229:8090/printPDF', {
+      axios.post('http://192.168.43.229:8091/printPDF', {
         htmldata
       })
         .then((res) => {
           const filename = res.data
           axios({
-            url: 'http://192.168.43.229:8090/printPDF/'+filename,
+            url: 'http://192.168.43.229:8091/printPDF/'+filename,
             method: 'GET',
             responseType: 'blob', // important
           }).then((response) => {
@@ -82,7 +82,7 @@ export default {
   created() {
          this._id = this.$route.params._id;
          const _id = this._id;
-         axios.post('http://192.168.43.229:8090/viewtemplate', {
+         axios.post('http://192.168.43.229:8091/viewtemplate', {
            _id
           })
             .then((res) => {

@@ -222,7 +222,7 @@ export default {
   },
   created() {
     //this.tid = this.$route.params.tid;
-    axios.post('http://192.168.43.229:8090/', {
+    axios.post('http://192.168.43.229:8091/', {
      })
        .then((res) => {
          console.log(res.data);

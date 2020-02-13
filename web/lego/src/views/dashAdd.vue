@@ -193,7 +193,7 @@ import axios from 'axios';
         else{
           membershipSelect = "4"
         }
-        axios.post('http://206.189.135.147:8090/profile/new', {
+        axios.post('http://206.189.135.147:8091/profile/new', {
           studentId,
           fullName,
           email,
