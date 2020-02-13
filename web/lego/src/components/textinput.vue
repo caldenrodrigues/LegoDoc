@@ -112,7 +112,7 @@ export default {
       const des = this.des;
       const type = this.typeSelect;
       const template = s;
-      axios.post('http://192.168.43.229:8091/uploadtemplate', {
+      axios.post('http://159.65.144.246:8091/uploadtemplate', {
         username,
         name,
         des,
